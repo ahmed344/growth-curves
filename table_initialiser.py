@@ -31,6 +31,7 @@ for experiment in experiments:
     
     # Extract the vesicle name
     curves = [x.removesuffix('.csv') for x in os.listdir(f'Data/{experiment}') if '.csv' in x]
+    curves.sort()
     name.append(curves)
     
     # Extract time and area
@@ -50,7 +51,7 @@ df = df.explode('Name').reset_index(drop=True)
 df['Time'] = time
 df['Area'] = area
 
-# Save the data frame as csv
+# Save the data frame as pickle
 df.to_pickle('Results/initial_area_curves.pkl')
 
 # Print the data frame
