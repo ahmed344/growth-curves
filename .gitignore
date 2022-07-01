@@ -3,6 +3,10 @@ Data/
 Data_row/
 Results/
 
+# images
+*.png
+*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
