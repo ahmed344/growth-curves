@@ -1,3 +1,8 @@
+# R
+*.RData
+*.Rhistory
+*.Rproj
+
 # Data
 Data/
 Data_row/
@@ -6,6 +11,7 @@ Results/
 # images
 *.png
 *.jpg
+*.svg
 
 # Trash
 Trash*
@@ -138,3 +144,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.Rproj.user
